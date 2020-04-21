@@ -8,6 +8,8 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
-  </div>
+    <!-- <h6>Remove this &lt;h3&gt; and create your HTML here</h6> -->
+    <input type="text" class="form-control mt-2" placeholder="Enter Text" #val (input)="onDescriptionInput(val.value)">
+    <p class='lead mb-2'>The text is : <strong>{{stringValue}}</strong></p>
+  </div> 
 </div>
